@@ -79,11 +79,11 @@
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2015/04/17/D02/">D02-hacking-manual</a>
+                                    <a href="/2015/04/17/D06/">D06-hacking-manual</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2014/12/23/D01/">D01-hacking-manual</a>
+                                    <a href="/2014/12/23/D05/">D05-hacking-manual</a>
                                 </li>
                                 
                                 </div>
@@ -137,12 +137,12 @@
                                 </li>
                                 
                                 <li class="search-tag-li mp-pjax">
-                                    <a href="/tags/D01/">&nbsp;&nbsp;&nbsp;D01</a>
+                                    <a href="/tags/D05/">&nbsp;&nbsp;&nbsp;D05</a>
                                     <small>1</small>
                                 </li>
                                 
                                 <li class="search-tag-li mp-pjax">
-                                    <a href="/tags/D02/">&nbsp;&nbsp;&nbsp;D02</a>
+                                    <a href="/tags/D06/">&nbsp;&nbsp;&nbsp;D06</a>
                                     <small>1</small>
                                 </li>
                                 
@@ -209,9 +209,9 @@
                 
                     <a  data-pjax href="/2015/08/10/Armor-Tools/">Armor Tools</a>
                 
-                    <a  data-pjax href="/2015/04/17/D02/">D02-hacking-manual</a>
+                    <a  data-pjax href="/2015/04/17/D06/">D06-hacking-manual</a>
                 
-                    <a  data-pjax href="/2014/12/23/D01/">D01-hacking-manual</a>
+                    <a  data-pjax href="/2014/12/23/D05/">D05-hacking-manual</a>
                 
                 
                 
@@ -221,9 +221,9 @@
                 
                     <a data-pjax href="/tags/Caliper-for-Benchmarking/">&nbsp;&nbsp;Caliper for Benchmarking</a>
                 
-                    <a data-pjax href="/tags/D01/">&nbsp;&nbsp;D01</a>
+                    <a data-pjax href="/tags/D05/">&nbsp;&nbsp;D05</a>
                 
-                    <a data-pjax href="/tags/D02/">&nbsp;&nbsp;D02</a>
+                    <a data-pjax href="/tags/D06/">&nbsp;&nbsp;D06</a>
                 
                     <a data-pjax href="/tags/Go-Through/">&nbsp;&nbsp;Go Through</a>
                 
@@ -290,17 +290,17 @@
     </span>
 
         <section class="post-content">
-            <p>Currently, we totally support <a href="/tags/D01/">D01</a> and <a href="/tags/D02/">D02</a> hardware boards, and more other boards will be expected to enable in future. The basic difference between them are shown as follows, more detail information about them, please refer to:<br><a href="/tags/D01/">D01 system hacking</a><br><a href="/tags/D02/">D02 system hacking</a></p>
+            <p>Currently, we totally support <a href="/tags/D05/">D05</a> and <a href="/tags/D06/">D06</a> hardware boards, and more other boards will be expected to enable in future. The basic difference between them are shown as follows, more detail information about them, please refer to:<br><a href="/tags/D05/">D05 system hacking</a><br><a href="/tags/D06/">D06 system hacking</a></p>
 <h2 id="Overview">Overview</h2>
 <ul>
-<li><a href="#d01">D01 Board Hardware Featuers</a></li>
-<li><a href="#d01arch">The D01’s Architecutre</a></li>
-<li><a href="#d02">D02 Board Hardwawre Feature</a></li>
-<li><a href="#d02arch">The D02’s Architecture</a></li>
+<li><a href="#d01">D05 Board Hardware Featuers</a></li>
+<li><a href="#d01arch">The D05’s Architecutre</a></li>
+<li><a href="#d02">D06 Board Hardwawre Feature</a></li>
+<li><a href="#d02arch">The D06’s Architecture</a></li>
 </ul>
 <p><a name="d01"></a></p>
-<h2 id="D01_Board_Hardware_Featuers">D01 Board Hardware Featuers</h2>
-<p>Major hardware features of D01 are listed here.                               </p>
+<h2 id="D05_Board_Hardware_Featuers">D05 Board Hardware Featuers</h2>
+<p>Major hardware features of D05 are listed here.                               </p>
 <pre><code><span class="code">+----------+</span>---------------------------------------------------------+
 <span class="header">|Features  |Description                                              |
 +----------+---------------------------------------------------------+</span>
@@ -350,8 +350,8 @@
 </code></pre><p><a name="pic"><br>Refer to the following picture to know<br>where each component below is physically located.    </a></p>
 <p><img src="http://7vilkn.com1.z0.glb.clouddn.com/d01-portrait.png" style="width:700px;height:500px;margin-left:30px"> </p>
 <p><a name="d01arch"> </a></p>
-<h2 id="The_D01’s_architecture">The D01’s architecture</h2>
-<p>The software architecture on D01 is consisted of [UEFI], [BootWrapper]<br>, [GRUB], [EFI Stub], [Kernel], [Distributions] and<br>[Toolchain]. The big picture is like following:</p>
+<h2 id="The_D05’s_architecture">The D05’s architecture</h2>
+<p>The software architecture on D05 is consisted of [UEFI], [BootWrapper]<br>, [GRUB], [EFI Stub], [Kernel], [Distributions] and<br>[Toolchain]. The big picture is like following:</p>
 <pre><code>      +--------------------------+ +-----+
       |  <span class="class">NANDRootfs</span> <span class="class">Ubuntu</span>       | |  <span class="class">T</span>  |
       |  <span class="class">OpenSuse</span> <span class="class">Debian</span> <span class="class">Fedora</span>  | <span class="localvars">|  o  |</span>
@@ -368,14 +368,14 @@
       | +-------+-------+-----+  | |     |
       +--------------------------+ +-----+
 </code></pre><p>More detail about software solution, please refer to <a href="/tags/Overview-Introduction/">Overview Introduction</a></p>
-<h2 id="D02_Board_Hardware_Features"><span id="d02">D02 Board Hardware Features</span></h2>
-<p>You should check the type of dimm and disk on D02 board firstly. Currently, for disks, it must satisfy the specification of <strong>SATA3</strong>; for dimms, it should satisfy the specification of <strong>UDIMM 2Rank 8Gbytes</strong> and <strong>RDIMM 2Rank 8Gbytes</strong>.</p>
-<p>Major hardware features of D02 are listed as follow:</p>
+<h2 id="D06_Board_Hardware_Features"><span id="d02">D06 Board Hardware Features</span></h2>
+<p>You should check the type of dimm and disk on D06 board firstly. Currently, for disks, it must satisfy the specification of <strong>SATA3</strong>; for dimms, it should satisfy the specification of <strong>UDIMM 2Rank 8Gbytes</strong> and <strong>RDIMM 2Rank 8Gbytes</strong>.</p>
+<p>Major hardware features of D06 are listed as follow:</p>
 <p><img src="http://7vilkn.com1.z0.glb.clouddn.com/d02_structure.jpg" style="width:700px;height:500px;margin-left:30px"> </p>
-<p>The structure picture of D02 is as follow:</p>
+<p>The structure picture of D06 is as follow:</p>
 <p><img src="http://7vilkn.com1.z0.glb.clouddn.com/hardware.png" style="width:700px;height:500px;margin-left:30px"> </p>
-<h3 id="The_D02’s_Architecture"><span id="d02arch">The D02’s Architecture</span></h3>
-<p>The software architecture on D02 is consistented of UEFI,GRUB,Kernel,Distribution and Toolchain.The architecture of D02 is as follow:</p>
+<h3 id="The_D06’s_Architecture"><span id="d02arch">The D06’s Architecture</span></h3>
+<p>The software architecture on D06 is consistented of UEFI,GRUB,Kernel,Distribution and Toolchain.The architecture of D06 is as follow:</p>
 <pre><code>+-----------------------++------+
 | <span class="class">NANDRootfs</span>  ubuntu    ||  <span class="class">T</span>   |
 | <span class="class">OpenSuse</span> <span class="class">Debian</span> <span class="class">Fedora</span>|<span class="localvars">|  o   |</span>
